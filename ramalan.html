@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ramalan kartu harian Tarot de Marseille — pilih satu kartu tertutup dan lihat maknanya. Animasi balik kartu dibuat murni dengan CSS.">
+  <title>Ramalan — Tarot de Marseille</title>
+  <link rel="icon" type="image/jpeg" href="card/a17.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Lewati ke konten utama</a>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">&#10022;</span> Tarot de Marseille
+      </a>
+      <nav class="site-nav" aria-label="Navigasi utama">
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="sejarah.html">Sejarah</a></li>
+          <li><a href="kartu.html">Arti Kartu</a></li>
+          <li><a href="ramalan.html" aria-current="page">Ramalan</a></li>
+          <li><a href="tentang.html">Tentang</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- SIDEBAR + KONTEN -->
+  <div class="site-shell">
+
+    <!-- SIDEBAR: navigasi halaman, daftar isi, kartu ajakan, profil -->
+    <aside class="sidebar" aria-label="Navigasi samping dan daftar isi">
+
+      <div class="side-head">
+        <span class="side-head-card" aria-hidden="true"><span>&#10022;</span></span>
+        <div>
+          <p class="side-head-title">Tarot de Marseille</p>
+          <p class="side-head-sub">Koleksi 78 Kartu</p>
+        </div>
+      </div>
+
+      <nav class="side-block side-nav" aria-label="Navigasi halaman">
+        <h2>Halaman</h2>
+        <ol>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="sejarah.html">Sejarah</a></li>
+            <li><a href="kartu.html">Arti Kartu</a></li>
+            <li><a href="ramalan.html" aria-current="page">Ramalan</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+        </ol>
+      </nav>
+
+      <nav class="side-block side-toc" aria-label="Daftar isi halaman ini">
+        <h2>Di Halaman Ini</h2>
+        <ul>
+            <li><a href="#tarik">Tarik Satu Kartu</a></li>
+            <li><a href="#hasil">Hasil Pembacaan</a></li>
+            <li><a href="#cara-membaca">Cara Membaca Hasilnya</a></li>
+        </ul>
+      </nav>
+
+      <div class="side-card">
+        <h2>Kartu Hari Ini</h2>
+        <p>Ambil satu kartu tertutup dan baca maknanya sebagai bahan renungan.</p>
+        <a class="btn btn-primary" href="ramalan.html">Tarik Kartu</a>
+      </div>
+
+      <div class="side-author">
+        <span class="side-monogram" aria-hidden="true">DW</span>
+        <div>
+          <p class="side-author-name">Danu Warisman</p>
+          <p class="side-author-meta">NIM 103122400041<br>Kelas S1SE-08-02</p>
+        </div>
+      </div>
+
+    </aside>
+
+    <!-- KONTEN UTAMA -->
+    <main id="main" class="content">
+      <!-- JUDUL HALAMAN -->
+      <section class="page-hero">
+        <div class="container narrow">
+          <p class="kicker">Card of the Day</p>
+          <h1>Ambil Satu Kartu</h1>
+          <p class="lead">
+            Pusatkan pikiran pada satu pertanyaan atau harapan untuk hari ini, lalu pilih
+            salah satu kartu tertutup di bawah. Kartu itu akan berputar dan menampilkan
+            wajah serta maknanya.
+          </p>
+        </div>
+      </section>
+
+      <!-- AREA TARIK KARTU (100% CSS, tanpa JavaScript) -->
+      <section class="section" id="tarik">
+        <div class="container">
+          <div class="draw-wrap">
+
+            <!-- Tombol radio tersembunyi: mengatur kartu mana yang terbuka -->
+            <input type="radio" name="pick" id="pick-0" class="pick" checked>
+            <input type="radio" name="pick" id="pick-1" class="pick">
+            <input type="radio" name="pick" id="pick-2" class="pick">
+            <input type="radio" name="pick" id="pick-3" class="pick">
+            <input type="radio" name="pick" id="pick-4" class="pick">
+            <input type="radio" name="pick" id="pick-5" class="pick">
+            <input type="radio" name="pick" id="pick-6" class="pick">
+
+            <div class="cards-grid">
+              <label class="draw-card" for="pick-1">
+                <span class="flipper">
+                  <span class="face face-back" aria-hidden="true"></span>
+                  <span class="face face-front"><img src="card/b06.jpg" alt="Enam de Bâtons"></span>
+                </span>
+                <span class="draw-label">Kartu 1</span>
+              </label>
+
+              <label class="draw-card" for="pick-2">
+                <span class="flipper">
+                  <span class="face face-back" aria-hidden="true"></span>
+                  <span class="face face-front"><img src="card/a17.jpg" alt="L'Étoile"></span>
+                </span>
+                <span class="draw-label">Kartu 2</span>
+              </label>
+
+              <label class="draw-card" for="pick-3">
+                <span class="flipper">
+                  <span class="face face-back" aria-hidden="true"></span>
+                  <span class="face face-front"><img src="card/a19.jpg" alt="Le Soleil"></span>
+                </span>
+                <span class="draw-label">Kartu 3</span>
+              </label>
+
+              <label class="draw-card" for="pick-4">
+                <span class="flipper">
+                  <span class="face face-back" aria-hidden="true"></span>
+                  <span class="face face-front"><img src="card/c01.jpg" alt="As de Coupes"></span>
+                </span>
+                <span class="draw-label">Kartu 4</span>
+              </label>
+
+              <label class="draw-card" for="pick-5">
+                <span class="flipper">
+                  <span class="face face-back" aria-hidden="true"></span>
+                  <span class="face face-front"><img src="card/d13.jpg" alt="Reine de Deniers"></span>
+                </span>
+                <span class="draw-label">Kartu 5</span>
+              </label>
+
+              <label class="draw-card" for="pick-6">
+                <span class="flipper">
+                  <span class="face face-back" aria-hidden="true"></span>
+                  <span class="face face-front"><img src="card/e12.jpg" alt="Cavalier d'Épées"></span>
+                </span>
+                <span class="draw-label">Kartu 6</span>
+              </label>
+            </div>
+
+            <!-- HASIL PEMBACAAN -->
+            <div class="readings" id="hasil">
+              <article class="reading reading-0">
+                <h2>Belum ada kartu yang dipilih</h2>
+                <p>Silakan pilih salah satu kartu di atas. Setelah dipilih, kartu akan berputar dan maknanya muncul di sini.</p>
+              </article>
+
+              <article class="reading reading-1">
+                <p class="reading-suit">B&acirc;tons &middot; Enam</p>
+                <h2>Enam de B&acirc;tons <span>&mdash; Kemenangan Kecil</span></h2>
+                <p>
+                  Usaha yang Anda rawat dengan tekun mulai menunjukkan hasil. Pengakuan kecil hari
+                  ini adalah tanda bahwa arah Anda sudah benar &mdash; rayakan secukupnya, lalu
+                  lanjutkan langkah. Suit B&acirc;tons berbicara tentang energi dan kerja, dan kartu
+                  ini mengajak Anda menjaga momentum tersebut.
+                </p>
+                <p class="reading-hint">Belum puas? Tekan tombol <strong>Tarik Ulang</strong> untuk mencoba kartu lain.</p>
+              </article>
+
+              <article class="reading reading-2">
+                <p class="reading-suit">Major Arcana &middot; XVII</p>
+                <h2>L'&Eacute;toile <span>&mdash; Harapan</span></h2>
+                <p>
+                  Setelah masa yang melelahkan, muncul titik terang yang menuntun langkah Anda.
+                  Percayalah pada proses dan jaga keyakinan &mdash; harapan bukan pelarian,
+                  melainkan kompas. Kartu ini juga mengingatkan Anda untuk berbagi cahaya itu
+                  kepada orang lain.
+                </p>
+                <p class="reading-hint">Belum puas? Tekan tombol <strong>Tarik Ulang</strong> untuk mencoba kartu lain.</p>
+              </article>
+
+              <article class="reading reading-3">
+                <p class="reading-suit">Major Arcana &middot; XIX</p>
+                <h2>Le Soleil <span>&mdash; Kebahagiaan</span></h2>
+                <p>
+                  Hari ini membawa kejelasan dan kehangatan. Keberhasilan yang Anda rasakan
+                  pantas disyukuri, dan energi positif ini menular kepada orang di sekitar.
+                  Gunakan momentum baik ini untuk menyelesaikan hal yang selama ini ditunda.
+                </p>
+                <p class="reading-hint">Belum puas? Tekan tombol <strong>Tarik Ulang</strong> untuk mencoba kartu lain.</p>
+              </article>
+
+              <article class="reading reading-4">
+                <p class="reading-suit">Coupes &middot; As</p>
+                <h2>As de Coupes <span>&mdash; Hati Terbuka</span></h2>
+                <p>
+                  Ada perasaan baru yang tumbuh &mdash; bisa cinta, bisa kedamaian batin. Izinkan
+                  diri Anda merasakannya tanpa buru-buru memberi nama. Suit Coupes berbicara
+                  tentang hati; rawat perasaan itu dengan lembut dan jujur.
+                </p>
+                <p class="reading-hint">Belum puas? Tekan tombol <strong>Tarik Ulang</strong> untuk mencoba kartu lain.</p>
+              </article>
+
+              <article class="reading reading-5">
+                <p class="reading-suit">Deniers &middot; Reine</p>
+                <h2>Reine de Deniers <span>&mdash; Kemakmuran</span></h2>
+                <p>
+                  Saatnya merawat apa yang sudah Anda miliki: kesehatan, pekerjaan, dan orang
+                  tersayang. Kepraktisan yang hangat membantu Anda mengubah sumber daya kecil
+                  menjadi sesuatu yang bernilai. Keseimbangan antara bekerja dan menikmati hasil
+                  adalah kuncinya.
+                </p>
+                <p class="reading-hint">Belum puas? Tekan tombol <strong>Tarik Ulang</strong> untuk mencoba kartu lain.</p>
+              </article>
+
+              <article class="reading reading-6">
+                <p class="reading-suit">&Eacute;p&eacute;es &middot; Cavalier</p>
+                <h2>Cavalier d'&Eacute;p&eacute;es <span>&mdash; Keberanian</span></h2>
+                <p>
+                  Tantangan mungkin datang tiba-tiba, tetapi Anda punya kecepatan dan ketajaman
+                  untuk menghadapinya. Beranilah berkata jujur dan mengambil keputusan. Pastikan
+                  pikiran tetap jernih agar langkah cepat tidak berubah menjadi gegabah.
+                </p>
+                <p class="reading-hint">Belum puas? Tekan tombol <strong>Tarik Ulang</strong> untuk mencoba kartu lain.</p>
+              </article>
+            </div>
+
+            <!-- AKSI -->
+            <div class="draw-actions">
+              <label class="btn btn-outline" for="pick-0">Tarik Ulang</label>
+            </div>
+
+            <p class="draw-note">
+              Halaman ini berjalan sepenuhnya tanpa JavaScript. Pilihan kartu disimpan pada tombol
+              radio tersembunyi, animasi berputarnya kartu dibuat memakai CSS transition tiga
+              dimensi, dan gambar punggung kartu digambar sepenuhnya dengan CSS.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- KETERANGAN TAMBAHAN -->
+      <section class="section alt" id="cara-membaca">
+        <div class="container narrow">
+          <div class="factbox">
+            <h3>Cara Membaca Hasilnya</h3>
+            <ul>
+              <li>Anggap kartu ini sebagai bahan renungan, bukan kepastian tentang masa depan.</li>
+              <li>Hubungkan makna kartu dengan situasi yang sedang Anda jalani hari ini.</li>
+              <li>Ingin mengenal kartu lain? Kunjungi halaman <a href="kartu.html">Arti Kartu</a>.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col footer-about">
+        <p class="footer-brand">Tarot de Marseille</p>
+        <p>
+          Website statis bertema Tarot de Marseille, dibangun murni dengan HTML5 dan CSS
+          tanpa framework apa pun.
+        </p>
+      </div>
+
+      <nav class="footer-col" aria-label="Navigasi footer">
+        <h2 class="footer-head">Halaman</h2>
+        <ul class="footer-links">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="sejarah.html">Sejarah</a></li>
+          <li><a href="kartu.html">Arti Kartu</a></li>
+          <li><a href="ramalan.html">Ramalan</a></li>
+          <li><a href="tentang.html">Tentang</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-col">
+        <h2 class="footer-head">Pembuat</h2>
+        <p>
+          Danu Warisman<br>
+          NIM 103122400041<br>
+          Kelas S1SE-08-02
+        </p>
+      </div>
+
+      <p class="footer-meta">
+        Tugas Kampus &middot; HTML5 &amp; Vanilla CSS &middot; Tanpa framework
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

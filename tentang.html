@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tentang pembuat website Tarot de Marseille — Danu Warisman, NIM 103122400041, Kelas S1SE-08-02. Tugas kampus pembuatan website statis.">
+  <title>Tentang — Tarot de Marseille</title>
+  <link rel="icon" type="image/jpeg" href="card/a17.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Lewati ke konten utama</a>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">&#10022;</span> Tarot de Marseille
+      </a>
+      <nav class="site-nav" aria-label="Navigasi utama">
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="sejarah.html">Sejarah</a></li>
+          <li><a href="kartu.html">Arti Kartu</a></li>
+          <li><a href="ramalan.html">Ramalan</a></li>
+          <li><a href="tentang.html" aria-current="page">Tentang</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- SIDEBAR + KONTEN -->
+  <div class="site-shell">
+
+    <!-- SIDEBAR: navigasi halaman, daftar isi, kartu ajakan, profil -->
+    <aside class="sidebar" aria-label="Navigasi samping dan daftar isi">
+
+      <div class="side-head">
+        <span class="side-head-card" aria-hidden="true"><span>&#10022;</span></span>
+        <div>
+          <p class="side-head-title">Tarot de Marseille</p>
+          <p class="side-head-sub">Koleksi 78 Kartu</p>
+        </div>
+      </div>
+
+      <nav class="side-block side-nav" aria-label="Navigasi halaman">
+        <h2>Halaman</h2>
+        <ol>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="sejarah.html">Sejarah</a></li>
+            <li><a href="kartu.html">Arti Kartu</a></li>
+            <li><a href="ramalan.html">Ramalan</a></li>
+            <li><a href="tentang.html" aria-current="page">Tentang</a></li>
+        </ol>
+      </nav>
+
+      <nav class="side-block side-toc" aria-label="Daftar isi halaman ini">
+        <h2>Di Halaman Ini</h2>
+        <ul>
+            <li><a href="#profil">Profil Pembuat</a></li>
+            <li><a href="#latar">Latar Belakang</a></li>
+            <li><a href="#pelajaran">Yang Dipelajari</a></li>
+            <li><a href="#sumber">Sumber Gambar</a></li>
+        </ul>
+      </nav>
+
+      <div class="side-card">
+        <h2>Kartu Hari Ini</h2>
+        <p>Ambil satu kartu tertutup dan baca maknanya sebagai bahan renungan.</p>
+        <a class="btn btn-primary" href="ramalan.html">Tarik Kartu</a>
+      </div>
+
+      <div class="side-author">
+        <span class="side-monogram" aria-hidden="true">DW</span>
+        <div>
+          <p class="side-author-name">Danu Warisman</p>
+          <p class="side-author-meta">NIM 103122400041<br>Kelas S1SE-08-02</p>
+        </div>
+      </div>
+
+    </aside>
+
+    <!-- KONTEN UTAMA -->
+    <main id="main" class="content">
+      <!-- JUDUL HALAMAN -->
+      <section class="page-hero">
+        <div class="container narrow">
+          <p class="kicker">Profil Pembuat</p>
+          <h1>Tentang Website Ini</h1>
+          <p class="lead">
+            Halaman ini berisi profil pembuat website serta latar belakang pembuatannya
+            sebagai tugas kampus.
+          </p>
+        </div>
+      </section>
+
+      <!-- KARTU PROFIL -->
+      <section class="section" id="profil">
+        <div class="container">
+          <div class="profile">
+            <div class="profile-img">
+     	     <img src="danu.jpeg" alt="profil" width="300">
+   	     </div>
+            <div class="profile-info">
+              <h2>Danu Warisman</h2>
+              <p class="profile-role">Mahasiswa &middot; Pembuat Website</p>
+              <dl>
+                <dt>Nama</dt>
+                <dd>Danu Warisman</dd>
+                <dt>NIM</dt>
+                <dd>103122400041</dd>
+                <dt>Kelas</dt>
+                <dd>S1SE-08-02</dd>
+                <dt>Tema</dt>
+                <dd>Website statis Tarot de Marseille</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- LATAR BELAKANG -->
+      <section class="section alt" id="latar">
+        <div class="container">
+          <div class="prose">
+            <h2>Latar Belakang</h2>
+            <p>
+              Website ini dibuat sebagai tugas kampus untuk mata kuliah pemrograman web.
+              Tujuannya adalah membangun sebuah website statis bertema bebas, dengan syarat
+              utama: tidak boleh memakai framework CSS maupun framework JavaScript apa pun.
+              Seluruh halaman harus dibangun dari nol memakai HTML dan CSS murni.
+            </p>
+            <p>
+              Tema Tarot de Marseille dipilih karena kekayaan visualnya. Kartu-kartu klasik
+              dari Prancis ini memiliki gaya gambar yang khas &mdash; sederhana namun penuh
+              simbol, dengan warna merah, biru, kuning, dan hijau yang tegas. Gaya inilah yang
+              coba dihadirkan kembali melalui palet warna parchment, merah bata, biru pucat,
+              dan sentuhan emas pada setiap halaman.
+            </p>
+            <p>
+              Tantangan terbesar justru muncul saat membuat halaman ramalan. Karena tidak
+              boleh memakai JavaScript, interaksi &ldquo;ambil satu kartu&rdquo; dibangun
+              memakai teknik <em>checkbox/radio hack</em>: pilihan pengunjung disimpan pada
+              tombol radio tersembunyi, lalu CSS memutar kartu tiga dimensi sesuai pilihan
+              tersebut. Hasilnya, kartu bisa berputar menampilkan wajahnya tanpa satu baris
+              skrip pun.
+            </p>
+
+            <h2 id="pelajaran">Yang Dipelajari dari Proyek Ini</h2>
+            <ul class="checklist">
+              <li>Menulis struktur HTML5 yang semantik dengan elemen seperti <em>header</em>, <em>nav</em>, <em>main</em>, <em>section</em>, dan <em>footer</em>.</li>
+              <li>Menyusun sistem desain memakai CSS custom properties (variabel) agar warna dan tipografi konsisten.</li>
+              <li>Mengatur tata letak responsif dengan CSS Grid dan Flexbox.</li>
+              <li>Membuat transisi dan animasi halus untuk tombol, kartu, dan elemen dekoratif.</li>
+              <li>Membangun interaktivitas murni CSS, termasuk kartu berputar dan penyaring galeri.</li>
+              <li>Menerapkan dasar aksesibilitas seperti label tombol, teks alternatif gambar, dan tautan lompat ke konten.</li>
+            </ul>
+
+            <div class="factbox">
+              <h3>Catatan Teknis</h3>
+              <ul>
+                <li>Tanpa framework: tidak ada Bootstrap, Tailwind, React, maupun Vue.</li>
+                <li>Tanpa JavaScript: seluruh interaksi dibangun memakai teknik CSS murni.</li>
+                <li>Aset gambar kartu menggunakan berkas lokal dari folder <em>card/</em>.</li>
+                <li>Punggung kartu pada halaman ramalan digambar murni memakai CSS, tanpa berkas gambar.</li>
+                <li>Font dimuat dari Google Fonts dengan cadangan Georgia dan Times New Roman.</li>
+              </ul>
+            </div>
+
+            <p id="sumber">
+              Gambar kartu yang dipakai di website ini merupakan restorasi Tarot de Marseille
+              oleh <strong>Yoav Ben-Dov</strong> (2010), berdasarkan dek klasik yang dicetak di
+              Marseille oleh <strong>Nicolas Conver</strong> pada tahun 1760, dengan lisensi
+              CC BY-NC-SA 2.0. Gambar tersebut hanya digunakan untuk keperluan akademik,
+              bukan untuk tujuan komersial.
+            </p>
+
+            <p>
+              Terima kasih telah mengunjungi website ini. Semoga halaman-halamannya dapat
+              memperkenalkan keindahan Tarot de Marseille sekaligus menunjukkan bahwa HTML
+              dan CSS murni pun mampu menghasilkan tampilan yang hidup dan interaktif.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col footer-about">
+        <p class="footer-brand">Tarot de Marseille</p>
+        <p>
+          Website statis bertema Tarot de Marseille, dibangun murni dengan HTML5 dan CSS
+          tanpa framework apa pun.
+        </p>
+      </div>
+
+      <nav class="footer-col" aria-label="Navigasi footer">
+        <h2 class="footer-head">Halaman</h2>
+        <ul class="footer-links">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="sejarah.html">Sejarah</a></li>
+          <li><a href="kartu.html">Arti Kartu</a></li>
+          <li><a href="ramalan.html">Ramalan</a></li>
+          <li><a href="tentang.html">Tentang</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-col">
+        <h2 class="footer-head">Pembuat</h2>
+        <p>
+          Danu Warisman<br>
+          NIM 103122400041<br>
+          Kelas S1SE-08-02
+        </p>
+      </div>
+
+      <p class="footer-meta">
+        Tugas Kampus &middot; HTML5 &amp; Vanilla CSS &middot; Tanpa framework
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

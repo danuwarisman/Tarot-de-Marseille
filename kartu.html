@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Galeri lengkap 78 kartu Tarot de Marseille beserta maknanya: Major Arcana dan suit Bâtons, Coupes, Deniers, Épées.">
+  <title>Arti Kartu — Tarot de Marseille</title>
+  <link rel="icon" type="image/jpeg" href="card/a17.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Lewati ke konten utama</a>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">&#10022;</span> Tarot de Marseille
+      </a>
+      <nav class="site-nav" aria-label="Navigasi utama">
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="sejarah.html">Sejarah</a></li>
+          <li><a href="kartu.html" aria-current="page">Arti Kartu</a></li>
+          <li><a href="ramalan.html">Ramalan</a></li>
+          <li><a href="tentang.html">Tentang</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- SIDEBAR + KONTEN -->
+  <div class="site-shell">
+
+    <!-- SIDEBAR: navigasi halaman, daftar isi, kartu ajakan, profil -->
+    <aside class="sidebar" aria-label="Navigasi samping dan daftar isi">
+
+      <div class="side-head">
+        <span class="side-head-card" aria-hidden="true"><span>&#10022;</span></span>
+        <div>
+          <p class="side-head-title">Tarot de Marseille</p>
+          <p class="side-head-sub">Koleksi 78 Kartu</p>
+        </div>
+      </div>
+
+      <nav class="side-block side-nav" aria-label="Navigasi halaman">
+        <h2>Halaman</h2>
+        <ol>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="sejarah.html">Sejarah</a></li>
+            <li><a href="kartu.html" aria-current="page">Arti Kartu</a></li>
+            <li><a href="ramalan.html">Ramalan</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+        </ol>
+      </nav>
+
+      <nav class="side-block side-toc" aria-label="Daftar isi halaman ini">
+        <h2>Di Halaman Ini</h2>
+        <ul>
+            <li><a href="#galeri">Galeri 78 Kartu</a></li>
+            <li><a href="#kelompok">Kelompok Kartu</a></li>
+            <li><a href="#major">Major Arcana</a></li>
+            <li><a href="#batons">B&acirc;tons</a></li>
+            <li><a href="#coupes">Coupes</a></li>
+            <li><a href="#deniers">Deniers</a></li>
+            <li><a href="#epees">&Eacute;p&eacute;es</a></li>
+        </ul>
+      </nav>
+
+      <div class="side-card">
+        <h2>Kartu Hari Ini</h2>
+        <p>Ambil satu kartu tertutup dan baca maknanya sebagai bahan renungan.</p>
+        <a class="btn btn-primary" href="ramalan.html">Tarik Kartu</a>
+      </div>
+
+      <div class="side-author">
+        <span class="side-monogram" aria-hidden="true">DW</span>
+        <div>
+          <p class="side-author-name">Danu Warisman</p>
+          <p class="side-author-meta">NIM 103122400041<br>Kelas S1SE-08-02</p>
+        </div>
+      </div>
+
+    </aside>
+
+    <!-- KONTEN UTAMA -->
+    <main id="main" class="content">
+      <!-- JUDUL HALAMAN -->
+      <section class="page-hero">
+        <div class="container narrow">
+          <p class="kicker">Galeri &middot; 78 Kartu</p>
+          <h1>Arti Kartu Tarot de Marseille</h1>
+          <p class="lead">
+            Setiap kartu memiliki cerita dan maknanya sendiri. Gunakan tombol penyaring
+            di bawah untuk melihat kelompok kartu tertentu, lalu baca penjelasan singkat
+            pada tiap kartu.
+          </p>
+        </div>
+      </section>
+
+      <!-- GALERI -->
+      <section class="section">
+        <div class="container">
+
+          <!-- PENYARING (murni CSS, tanpa JavaScript) -->
+          <input type="radio" name="filter" id="f-all" class="filter-input" checked>
+          <input type="radio" name="filter" id="f-major" class="filter-input">
+          <input type="radio" name="filter" id="f-b" class="filter-input">
+          <input type="radio" name="filter" id="f-c" class="filter-input">
+          <input type="radio" name="filter" id="f-d" class="filter-input">
+          <input type="radio" name="filter" id="f-e" class="filter-input">
+
+          <div class="filter-bar" id="kelompok" role="group" aria-label="Saring kartu berdasarkan kelompok">
+            <label for="f-all">Semua <small>(78)</small></label>
+            <label for="f-major">Major Arcana <small>(22)</small></label>
+            <label for="f-b">Bâtons <small>(14)</small></label>
+            <label for="f-c">Coupes <small>(14)</small></label>
+            <label for="f-d">Deniers <small>(14)</small></label>
+            <label for="f-e">&Eacute;p&eacute;es <small>(14)</small></label>
+          </div>
+
+          <div class="gallery" id="galeri">
+
+            <!-- MAJOR ARCANA (a01–a22) -->
+            <article class="card-item suit-major" id="major">
+              <figure class="card-figure">
+                <img src="card/a01.jpg" alt="Le Bateleur — kartu Major Arcana Tarot de Marseille" loading="lazy">
+                <span class="card-no">I</span>
+              </figure>
+              <h3>Le Bateleur<span class="card-sub">Sang Pesulap</span></h3>
+              <p>Awal dari segala sesuatu. Bakat, keterampilan, dan peluang baru ada di depan mata — tinggal dimanfaatkan dengan keberanian.</p>
+              <span class="suit-tag">Major Arcana</span>
+            </article>
+
+            <article class="card-item suit-major">
+              <figure class="card-figure">
+                <img src="card/a02.jpg" alt="La Papesse — kartu Major Arcana Tarot de Marseille" loading="lazy">
+                <span class="card-no">II</span>
+              </figure>
+              <h3>La Papesse<span class="card-sub">Sang Pendeta Perempuan</span></h3>
+              <p>Pengetahuan yang tersimpan diam-diam, intuisi, dan kesabaran. Tidak semua hal perlu diungkapkan; sebagian cukup dipahami.</p>
+              <span class="suit-tag">Major Arcana</span>
+            </article>
+
+            <article class="card-item suit-major">
+              <figure class="card-figure">
+                <img src="card/a03.jpg" alt="L'Impératrice — kartu Major Arcana Tarot de Marseille" loading="lazy">
+                <span class="card-no">III</span>
+              </figure>
+              <h3>L'Imp&eacute;ratrice<span class="card-sub">Sang Permaisuri</span></h3>
+              <p>Kreativitas, kesuburan, dan pertumbuhan yang penuh kasih. Sesuatu yang dirawat dengan sabar akan berkembang.</p>
+              <span class="suit-tag">Major Arcana</span>
+            </article>
+
+            <article class="card-item suit-major">
+              <figure class="card-figure">
+                <img src="card/a04.jpg" alt="L'Empereur — kartu Major Arcana Tarot de Marseille" loading="lazy">
+                <span class="card-no">IV</span>
+              </figure>
+              <h3>L'Empereur<span class="card-sub">Sang Kaisar</span></h3>
+              <p>Struktur, wewenang, dan disiplin. Kestabilan lahir dari aturan yang jelas dan keputusan yang teguh.</p>
+              <span class="suit-tag">Major Arcana</span>
+            </article>
+
+            <article class="card-item suit-major">
+              <figure class="card-figure">
+                <img src="card/a05.jpg" alt="Le Pape — kartu Major Arcana Tarot de Marseille" loading="lazy">
+                <span class="card-no">V</span>
+              </figure>
+              <h3>Le Pape<span class="card-sub">Sang Paus</span></h3>
+              <p>Nasihat bijak, bimbingan, dan tradisi yang menuntun. Terkadang kita perlu mendengar orang yang lebih berpengalaman.</p>
+              <span class="suit-tag">Major Arcana</span>
+            </article>
+
+            <article class="card-item suit-major">
+              <figure class="card-figure">
+                <img src="card/a06.jpg" alt="L'Amoureux — kartu Major Arcana Tarot de Marseille" loading="lazy">
+                <span class="card-no">VI</span>
+              </figure>
+              <h3>L'Amoureux<span class="card-sub">Sang Kekasih</span></h3>
+              <p>Pilihan hati dan keraguan antara dua jalan. Cinta menuntut keberanian untuk memilih dengan jujur.</p>
+              <span class="suit-tag">Major Arcana</span>
+            </article>
+
+            <article class="card-item suit-major">
+              <figure class="card-figure">
+                <img src="card/a07.jpg" alt="Le Chariot — kartu Major Arcana Tarot de Marseille" loading="lazy">
+                <span class="card-no">VII</span>
+              </figure>
+              <h3>Le Chariot<span class="card-sub">Kereta Perang</span></h3>
+              <p>Kemenangan melalui tekad dan kendali diri. Arah yang jelas membawa langkah menuju keberhasilan.</p>
+              <span class="suit-tag">Major Arcana</span>
+            </article>
+
+            <article class="card-item suit-major">
+              <figure class="card-figure">
+                <img src="card/a08.jpg" alt="La Justice — kartu Major Arcana Tarot de Marseille" loading="lazy">
+                <span class="card-no">VIII</span>
+              </figure>
+              <h3>La Justice<span class="card-sub">Keadilan</span></h3>
+              <p>Keseimbangan, kejujuran, dan konsekuensi dari setiap perbuatan. Keputusan yang adil menuntut pikiran yang jernih.</p>
+              <span class="suit-tag">Major Arcana</span>
+            </article>
+
+            <article class="card-item suit-major">
+              <figure class="card-figure">
+                <img src="card/a09.jpg" alt="L'Hermite — kartu Major Arcana Tarot de Marseille" loading="lazy">
+                <span class="card-no">IX</span>
+              </figure>
+              <h3>L'Hermite<span class="card-sub">Sang Pertapa</span></h3>
+              <p>Introspeksi dan pencarian makna dalam kesendirian. Lentera kecil di tangan cukup untuk menerangi langkah berikutnya.</p>
+              <span class="suit-tag">Major Arcana</span>
+            </article>
+
+            <article class="card-item suit-major">
+              <figure class="card-figure">
+                <img src="card/a10.jpg" alt="La Roue de Fortune — kartu Major Arcana Tarot de Marseille" loading="lazy">
+                <span class="card-no">X</span>
+              </figure>
+              <h3>La Roue de Fortune<span class="card-sub">Roda Keberuntungan</span></h3>
+              <p>Siklus hidup yang terus berputar. Perubahan datang tanpa diminta, dan keberuntungan berpihak pada yang siap.</p>
+              <span class="suit-tag">Major Arcana</span>
+            </article>
+
+            <article class="card-item suit-major">
+              <figure class="card-figure">
+                <img src="card/a11.jpg" alt="La Force — kartu Major Arcana Tarot de Marseille" loading="lazy">
+                <span class="card-no">XI</span>
+              </figure>
+              <h3>La Force<span class="card-sub">Kekuatan</span></h3>
+              <p>Keberanian yang lembut, bukan kekerasan. Kesabaran dan belas kasih mampu menjinakkan dorongan yang paling liar.</p>
+              <span class="suit-tag">Major Arcana</span>
+            </article>
+
+            <article class="card-item suit-major">
+              <figure class="card-figure">
+                <img src="card/a12.jpg" alt="Le Pendu — kartu Major Arcana Tarot de Marseille" loading="lazy">
+                <span class="card-no">XII</span>
+              </figure>
+              <h3>Le Pendu<span class="card-sub">Sang Terjungkai</span></h3>
+              <p>Berhenti sejenak dan melihat dari sudut pandang lain. Kadang kemenangan datang dengan melepaskan, bukan memaksa.</p>
+              <span class="suit-tag">Major Arcana</span>
+            </article>
+
+            <article class="card-item suit-major">
+              <figure class="card-figure">
+                <img src="card/a13.jpg" alt="L'Arcane XIII — kartu Major Arcana Tarot de Marseille" loading="lazy">
+                <span class="card-no">XIII</span>
+              </figure>
+              <h3>L'Arcane XIII<span class="card-sub">Kartu Tanpa Nama &middot; Transformasi</span></h3>
+              <p>Akhir dari satu siklus dan awal dari yang lain. Melepaskan masa lalu membuka ruang bagi pertumbuhan baru.</p>
+              <span class="suit-tag">Major Arcana</span>
+            </article>
+
+            <article class="card-item suit-major">
+              <figure class="card-figure">
+                <img src="card/a14.jpg" alt="Tempérance — kartu Major Arcana Tarot de Marseille" loading="lazy">
+                <span class="card-no">XIV</span>
+              </figure>
+              <h3>Temp&eacute;rance<span class="card-sub">Kesederhanaan</span></h3>
+              <p>Keseimbangan, takaran yang tepat, dan penyembuhan yang berjalan perlahan. Segala sesuatu indah pada porsinya.</p>
+              <span class="suit-tag">Major Arcana</span>
+            </article>
+
+            <article class="card-item suit-major">
+              <figure class="card-figure">
+                <img src="card/a15.jpg" alt="Le Diable — kartu Major Arcana Tarot de Marseille" loading="lazy">
+                <span class="card-no">XV</span>
+              </figure>
+              <h3>Le Diable<span class="card-sub">Sang Iblis</span></h3>
+              <p>Godaan dan keterikatan yang membelenggu. Kesadaran adalah kunci untuk melepaskan diri dari belenggu itu.</p>
+              <span class="suit-tag">Major Arcana</span>
+            </article>
+
+            <article class="card-item suit-major">
+              <figure class="card-figure">
+                <img src="card/a16.jpg" alt="La Maison Dieu — kartu Major Arcana Tarot de Marseille" loading="lazy">
+                <span class="card-no">XVI</span>
+              </figure>
+              <h3>La Maison Dieu<span class="card-sub">La Tour &middot; Menara</span></h3>
+              <p>Guncangan yang meruntuhkan sesuatu agar dapat dibangun ulang. Pembaruan sering kali dimulai dari keruntuhan.</p>
+              <span class="suit-tag">Major Arcana</span>
+            </article>
+
+            <article class="card-item suit-major">
+              <figure class="card-figure">
+                <img src="card/a17.jpg" alt="L'Étoile — kartu Major Arcana Tarot de Marseille" loading="lazy">
+                <span class="card-no">XVII</span>
+              </figure>
+              <h3>L'&Eacute;toile<span class="card-sub">Bintang</span></h3>
+              <p>Harapan dan inspirasi yang memandu di malam gelap. Setelah badai berlalu, selalu ada cahaya untuk dituju.</p>
+              <span class="suit-tag">Major Arcana</span>
+            </article>
+
+            <article class="card-item suit-major">
+              <figure class="card-figure">
+                <img src="card/a18.jpg" alt="La Lune — kartu Major Arcana Tarot de Marseille" loading="lazy">
+                <span class="card-no">XVIII</span>
+              </figure>
+              <h3>La Lune<span class="card-sub">Bulan</span></h3>
+              <p>Ilusi dan isyarat dari alam bawah sadar. Tidak semua yang tampak jelas memang seperti kelihatannya.</p>
+              <span class="suit-tag">Major Arcana</span>
+            </article>
+
+            <article class="card-item suit-major">
+              <figure class="card-figure">
+                <img src="card/a19.jpg" alt="Le Soleil — kartu Major Arcana Tarot de Marseille" loading="lazy">
+                <span class="card-no">XIX</span>
+              </figure>
+              <h3>Le Soleil<span class="card-sub">Matahari</span></h3>
+              <p>Kebahagiaan, kejelasan, dan keberhasilan yang hangat. Energi positif menerangi setiap sudut kehidupan.</p>
+              <span class="suit-tag">Major Arcana</span>
+            </article>
+
+            <article class="card-item suit-major">
+              <figure class="card-figure">
+                <img src="card/a20.jpg" alt="Le Jugement — kartu Major Arcana Tarot de Marseille" loading="lazy">
+                <span class="card-no">XX</span>
+              </figure>
+              <h3>Le Jugement<span class="card-sub">Penghakiman</span></h3>
+              <p>Kebangkitan dan panggilan jiwa. Saatnya mengevaluasi diri dan memulai babak baru dengan kesadaran penuh.</p>
+              <span class="suit-tag">Major Arcana</span>
+            </article>
+
+            <article class="card-item suit-major">
+              <figure class="card-figure">
+                <img src="card/a21.jpg" alt="Le Monde — kartu Major Arcana Tarot de Marseille" loading="lazy">
+                <span class="card-no">XXI</span>
+              </figure>
+              <h3>Le Monde<span class="card-sub">Dunia</span></h3>
+              <p>Penyelesaian sebuah perjalanan. Keberhasilan menyeluruh dan rasa syukur atas semua yang telah dilalui.</p>
+              <span class="suit-tag">Major Arcana</span>
+            </article>
+
+            <article class="card-item suit-major">
+              <figure class="card-figure">
+                <img src="card/a22.jpg" alt="Le Mat — kartu Major Arcana Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Le Mat<span class="card-sub">Sang Pengembara</span></h3>
+              <p>Kebebasan tanpa beban dan awal yang sama sekali baru. Melangkah dengan polos, penasaran, dan tanpa rasa takut.</p>
+              <span class="suit-tag">Major Arcana</span>
+            </article>
+
+            <!-- SUIT BÂTONS (b01–b14) -->
+            <article class="card-item suit-b" id="batons">
+              <figure class="card-figure">
+                <img src="card/b01.jpg" alt="As de Bâtons — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>As de B&acirc;tons<span class="card-sub">As Tongkat</span></h3>
+              <p>Percikan semangat baru. Ide segar dan dorongan untuk memulai sesuatu yang selama ini ditunda.</p>
+              <span class="suit-tag">B&acirc;tons</span>
+            </article>
+
+            <article class="card-item suit-b">
+              <figure class="card-figure">
+                <img src="card/b02.jpg" alt="Deux de Bâtons — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Deux de B&acirc;tons<span class="card-sub">Dua Tongkat</span></h3>
+              <p>Merancang arah dan menyusun rencana. Dua pilihan jalan terbuka, tinggal menentukan langkah pertama.</p>
+              <span class="suit-tag">B&acirc;tons</span>
+            </article>
+
+            <article class="card-item suit-b">
+              <figure class="card-figure">
+                <img src="card/b03.jpg" alt="Trois de Bâtons — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Trois de B&acirc;tons<span class="card-sub">Tiga Tongkat</span></h3>
+              <p>Langkah awal yang mulai berbuah. Kerja sama dan visi yang jelas membuka peluang yang lebih luas.</p>
+              <span class="suit-tag">B&acirc;tons</span>
+            </article>
+
+            <article class="card-item suit-b">
+              <figure class="card-figure">
+                <img src="card/b04.jpg" alt="Quatre de Bâtons — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Quatre de B&acirc;tons<span class="card-sub">Empat Tongkat</span></h3>
+              <p>Fondasi yang kokoh dan suasana yang harmonis. Saatnya menikmati hasil kerja sebelum melangkah lagi.</p>
+              <span class="suit-tag">B&acirc;tons</span>
+            </article>
+
+            <article class="card-item suit-b">
+              <figure class="card-figure">
+                <img src="card/b05.jpg" alt="Cinq de Bâtons — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Cinq de B&acirc;tons<span class="card-sub">Lima Tongkat</span></h3>
+              <p>Persaingan dan gesekan pendapat. Perbedaan bisa menjadi sehat bila dijaga dengan sikap sportif.</p>
+              <span class="suit-tag">B&acirc;tons</span>
+            </article>
+
+            <article class="card-item suit-b">
+              <figure class="card-figure">
+                <img src="card/b06.jpg" alt="Six de Bâtons — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Six de B&acirc;tons<span class="card-sub">Enam Tongkat</span></h3>
+              <p>Kemenangan kecil yang layak dirayakan. Usaha yang tekun mulai mendapat pengakuan dari sekitar.</p>
+              <span class="suit-tag">B&acirc;tons</span>
+            </article>
+
+            <article class="card-item suit-b">
+              <figure class="card-figure">
+                <img src="card/b07.jpg" alt="Sept de Bâtons — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Sept de B&acirc;tons<span class="card-sub">Tujuh Tongkat</span></h3>
+              <p>Mempertahankan posisi yang sudah diperjuangkan. Keberanian dibutuhkan saat berada di bawah tekanan.</p>
+              <span class="suit-tag">B&acirc;tons</span>
+            </article>
+
+            <article class="card-item suit-b">
+              <figure class="card-figure">
+                <img src="card/b08.jpg" alt="Huit de Bâtons — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Huit de B&acirc;tons<span class="card-sub">Delapan Tongkat</span></h3>
+              <p>Kemajuan yang bergerak cepat. Kabar baik dan komunikasi lancar mempercepat semua urusan.</p>
+              <span class="suit-tag">B&acirc;tons</span>
+            </article>
+
+            <article class="card-item suit-b">
+              <figure class="card-figure">
+                <img src="card/b09.jpg" alt="Neuf de Bâtons — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Neuf de B&acirc;tons<span class="card-sub">Sembilan Tongkat</span></h3>
+              <p>Kewaspadaan menjelang garis akhir. Bekal pengalaman membuat langkah terakhir terasa lebih ringan.</p>
+              <span class="suit-tag">B&acirc;tons</span>
+            </article>
+
+            <article class="card-item suit-b">
+              <figure class="card-figure">
+                <img src="card/b10.jpg" alt="Dix de Bâtons — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Dix de B&acirc;tons<span class="card-sub">Sepuluh Tongkat</span></h3>
+              <p>Beban tanggung jawab yang menumpuk. Hampir sampai — jangan menyerah sebelum pekerjaan tuntas.</p>
+              <span class="suit-tag">B&acirc;tons</span>
+            </article>
+
+            <article class="card-item suit-b">
+              <figure class="card-figure">
+                <img src="card/b11.jpg" alt="Valet de Bâtons — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Valet de B&acirc;tons<span class="card-sub">Pelayan Tongkat</span></h3>
+              <p>Semangat muda dan rasa ingin tahu. Kabar baik datang bagi yang bersedia belajar hal baru.</p>
+              <span class="suit-tag">B&acirc;tons</span>
+            </article>
+
+            <article class="card-item suit-b">
+              <figure class="card-figure">
+                <img src="card/b12.jpg" alt="Cavalier de Bâtons — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Cavalier de B&acirc;tons<span class="card-sub">Ksatria Tongkat</span></h3>
+              <p>Aksi cepat dan jiwa petualang. Berani bergerak, namun tetap perhatikan arah agar tidak terburu-buru.</p>
+              <span class="suit-tag">B&acirc;tons</span>
+            </article>
+
+            <article class="card-item suit-b">
+              <figure class="card-figure">
+                <img src="card/b13.jpg" alt="Reine de Bâtons — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Reine de B&acirc;tons<span class="card-sub">Ratu Tongkat</span></h3>
+              <p>Karisma yang hangat dan kepemimpinan dari hati. Kepercayaan diri menular kepada orang di sekitar.</p>
+              <span class="suit-tag">B&acirc;tons</span>
+            </article>
+
+            <article class="card-item suit-b">
+              <figure class="card-figure">
+                <img src="card/b14.jpg" alt="Roi de Bâtons — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Roi de B&acirc;tons<span class="card-sub">Raja Tongkat</span></h3>
+              <p>Visi dan wibawa seorang pemimpin. Keputusan yang tegas menggerakkan orang lain untuk ikut melangkah.</p>
+              <span class="suit-tag">B&acirc;tons</span>
+            </article>
+            <!-- SUIT COUPES (c01–c14) -->
+            <article class="card-item suit-c" id="coupes">
+              <figure class="card-figure">
+                <img src="card/c01.jpg" alt="As de Coupes — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>As de Coupes<span class="card-sub">As Cangkir</span></h3>
+              <p>Hati yang terbuka untuk perasaan baru. Awal dari cinta, persahabatan, atau kedamaian batin.</p>
+              <span class="suit-tag">Coupes</span>
+            </article>
+
+            <article class="card-item suit-c">
+              <figure class="card-figure">
+                <img src="card/c02.jpg" alt="Deux de Coupes — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Deux de Coupes<span class="card-sub">Dua Cangkir</span></h3>
+              <p>Hubungan yang saling mengisi dan ketertarikan yang tulus. Ada keharmonisan antara dua pihak.</p>
+              <span class="suit-tag">Coupes</span>
+            </article>
+
+            <article class="card-item suit-c">
+              <figure class="card-figure">
+                <img src="card/c03.jpg" alt="Trois de Coupes — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Trois de Coupes<span class="card-sub">Tiga Cangkir</span></h3>
+              <p>Persahabatan dan perayaan bersama. Dukungan dari orang terdekat membuat beban terasa lebih ringan.</p>
+              <span class="suit-tag">Coupes</span>
+            </article>
+
+            <article class="card-item suit-c">
+              <figure class="card-figure">
+                <img src="card/c04.jpg" alt="Quatre de Coupes — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Quatre de Coupes<span class="card-sub">Empat Cangkir</span></h3>
+              <p>Rasa jenuh atau tawaran yang diabaikan. Sesekali perlu berhenti dan melihat kembali apa yang sudah dimiliki.</p>
+              <span class="suit-tag">Coupes</span>
+            </article>
+
+            <article class="card-item suit-c">
+              <figure class="card-figure">
+                <img src="card/c05.jpg" alt="Cinq de Coupes — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Cinq de Coupes<span class="card-sub">Lima Cangkir</span></h3>
+              <p>Kekecewaan yang perlu diterima dengan lapang. Di balik kehilangan, masih ada hal berharga yang tersisa.</p>
+              <span class="suit-tag">Coupes</span>
+            </article>
+
+            <article class="card-item suit-c">
+              <figure class="card-figure">
+                <img src="card/c06.jpg" alt="Six de Coupes — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Six de Coupes<span class="card-sub">Enam Cangkir</span></h3>
+              <p>Kenangan manis dan kebaikan dari masa lalu. Nostalgia yang menghangatkan sekaligus mengajarkan sesuatu.</p>
+              <span class="suit-tag">Coupes</span>
+            </article>
+
+            <article class="card-item suit-c">
+              <figure class="card-figure">
+                <img src="card/c07.jpg" alt="Sept de Coupes — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Sept de Coupes<span class="card-sub">Tujuh Cangkir</span></h3>
+              <p>Banyak pilihan dan angan-angan yang perlu disaring. Tidak semua yang berkilau layak dikejar.</p>
+              <span class="suit-tag">Coupes</span>
+            </article>
+
+            <article class="card-item suit-c">
+              <figure class="card-figure">
+                <img src="card/c08.jpg" alt="Huit de Coupes — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Huit de Coupes<span class="card-sub">Delapan Cangkir</span></h3>
+              <p>Melangkah pergi demi sesuatu yang lebih bermakna. Keputusan sulit yang membawa kedamaian jangka panjang.</p>
+              <span class="suit-tag">Coupes</span>
+            </article>
+
+            <article class="card-item suit-c">
+              <figure class="card-figure">
+                <img src="card/c09.jpg" alt="Neuf de Coupes — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Neuf de Coupes<span class="card-sub">Sembilan Cangkir</span></h3>
+              <p>Kepuasan dan rasa syukur. Kebahagiaan sederhana yang cukup untuk membuat hati tenang.</p>
+              <span class="suit-tag">Coupes</span>
+            </article>
+
+            <article class="card-item suit-c">
+              <figure class="card-figure">
+                <img src="card/c10.jpg" alt="Dix de Coupes — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Dix de Coupes<span class="card-sub">Sepuluh Cangkir</span></h3>
+              <p>Keharmonisan keluarga dan kebahagiaan yang menyeluruh. Rumah terasa hangat bagi semua yang ada di dalamnya.</p>
+              <span class="suit-tag">Coupes</span>
+            </article>
+
+            <article class="card-item suit-c">
+              <figure class="card-figure">
+                <img src="card/c11.jpg" alt="Valet de Coupes — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Valet de Coupes<span class="card-sub">Pelayan Cangkir</span></h3>
+              <p>Pesan emosional atau kepekaan yang baru tumbuh. Bunga pertama dari sebuah perasaan yang tulus.</p>
+              <span class="suit-tag">Coupes</span>
+            </article>
+
+            <article class="card-item suit-c">
+              <figure class="card-figure">
+                <img src="card/c12.jpg" alt="Cavalier de Coupes — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Cavalier de Coupes<span class="card-sub">Ksatria Cangkir</span></h3>
+              <p>Mengikuti kata hati dan menyampaikan perasaan. Romansa yang manis, meski perlu tetap berpijak pada kenyataan.</p>
+              <span class="suit-tag">Coupes</span>
+            </article>
+
+            <article class="card-item suit-c">
+              <figure class="card-figure">
+                <img src="card/c13.jpg" alt="Reine de Coupes — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Reine de Coupes<span class="card-sub">Ratu Cangkir</span></h3>
+              <p>Empati dan intuisi yang dalam. Kelembutan yang menenangkan siapa pun yang berada di dekatnya.</p>
+              <span class="suit-tag">Coupes</span>
+            </article>
+
+            <article class="card-item suit-c">
+              <figure class="card-figure">
+                <img src="card/c14.jpg" alt="Roi de Coupes — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Roi de Coupes<span class="card-sub">Raja Cangkir</span></h3>
+              <p>Kedewasaan emosi dan ketenangan hati. Bijak dalam menimbang perasaan, adil dalam bersikap.</p>
+              <span class="suit-tag">Coupes</span>
+            </article>
+            <!-- SUIT DENIERS (d01–d14) -->
+            <article class="card-item suit-d" id="deniers">
+              <figure class="card-figure">
+                <img src="card/d01.jpg" alt="As de Deniers — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>As de Deniers<span class="card-sub">As Koin</span></h3>
+              <p>Peluang nyata yang bernilai. Awal dari rezeki, pekerjaan, atau usaha yang menguntungkan.</p>
+              <span class="suit-tag">Deniers</span>
+            </article>
+
+            <article class="card-item suit-d">
+              <figure class="card-figure">
+                <img src="card/d02.jpg" alt="Deux de Deniers — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Deux de Deniers<span class="card-sub">Dua Koin</span></h3>
+              <p>Mengelola dua hal sekaligus dengan luwes. Keseimbangan antara pekerjaan, studi, dan kehidupan pribadi.</p>
+              <span class="suit-tag">Deniers</span>
+            </article>
+
+            <article class="card-item suit-d">
+              <figure class="card-figure">
+                <img src="card/d03.jpg" alt="Trois de Deniers — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Trois de Deniers<span class="card-sub">Tiga Koin</span></h3>
+              <p>Kerja keras yang mulai berbuah. Keterampilan yang diasah akhirnya mendapat penghargaan.</p>
+              <span class="suit-tag">Deniers</span>
+            </article>
+
+            <article class="card-item suit-d">
+              <figure class="card-figure">
+                <img src="card/d04.jpg" alt="Quatre de Deniers — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Quatre de Deniers<span class="card-sub">Empat Koin</span></h3>
+              <p>Keamanan materi dan kehati-hatian dalam menjaga apa yang dimiliki. Pastikan tidak terlalu menggenggam erat.</p>
+              <span class="suit-tag">Deniers</span>
+            </article>
+
+            <article class="card-item suit-d">
+              <figure class="card-figure">
+                <img src="card/d05.jpg" alt="Cinq de Deniers — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Cinq de Deniers<span class="card-sub">Lima Koin</span></h3>
+              <p>Kesulitan materi yang bersifat sementara. Ketahanan dan bantuan dari sekitar menjadi kuncinya.</p>
+              <span class="suit-tag">Deniers</span>
+            </article>
+
+            <article class="card-item suit-d">
+              <figure class="card-figure">
+                <img src="card/d06.jpg" alt="Six de Deniers — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Six de Deniers<span class="card-sub">Enam Koin</span></h3>
+              <p>Memberi dan menerima dengan seimbang. Bantuan yang datang tepat waktu, atau kesempatan untuk berbagi.</p>
+              <span class="suit-tag">Deniers</span>
+            </article>
+
+            <article class="card-item suit-d">
+              <figure class="card-figure">
+                <img src="card/d07.jpg" alt="Sept de Deniers — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Sept de Deniers<span class="card-sub">Tujuh Koin</span></h3>
+              <p>Kesabaran menunggu hasil dari apa yang telah ditanam. Panen membutuhkan waktu, bukan paksaan.</p>
+              <span class="suit-tag">Deniers</span>
+            </article>
+
+            <article class="card-item suit-d">
+              <figure class="card-figure">
+                <img src="card/d08.jpg" alt="Huit de Deniers — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Huit de Deniers<span class="card-sub">Delapan Koin</span></h3>
+              <p>Ketekunan dan perhatian pada detail. Pekerjaan yang dikerjakan dengan rajin menuju hasil yang memuaskan.</p>
+              <span class="suit-tag">Deniers</span>
+            </article>
+
+            <article class="card-item suit-d">
+              <figure class="card-figure">
+                <img src="card/d09.jpg" alt="Neuf de Deniers — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Neuf de Deniers<span class="card-sub">Sembilan Koin</span></h3>
+              <p>Kemandirian dan rasa aman dari hasil usaha sendiri. Saatnya menikmati apa yang sudah diperjuangkan.</p>
+              <span class="suit-tag">Deniers</span>
+            </article>
+
+            <article class="card-item suit-d">
+              <figure class="card-figure">
+                <img src="card/d10.jpg" alt="Dix de Deniers — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Dix de Deniers<span class="card-sub">Sepuluh Koin</span></h3>
+              <p>Kestabilan jangka panjang dan warisan yang bernilai. Pencapaian yang bisa dinikmati bersama keluarga.</p>
+              <span class="suit-tag">Deniers</span>
+            </article>
+
+            <article class="card-item suit-d">
+              <figure class="card-figure">
+                <img src="card/d11.jpg" alt="Valet de Deniers — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Valet de Deniers<span class="card-sub">Pelayan Koin</span></h3>
+              <p>Kesempatan untuk belajar keterampilan baru. Langkah kecil yang bisa menjadi jalan panjang di masa depan.</p>
+              <span class="suit-tag">Deniers</span>
+            </article>
+
+            <article class="card-item suit-d">
+              <figure class="card-figure">
+                <img src="card/d12.jpg" alt="Cavalier de Deniers — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Cavalier de Deniers<span class="card-sub">Ksatria Koin</span></h3>
+              <p>Kerja tekun dan dapat diandalkan. Kemajuan nyata lebih penting daripada kecepatan semata.</p>
+              <span class="suit-tag">Deniers</span>
+            </article>
+
+            <article class="card-item suit-d">
+              <figure class="card-figure">
+                <img src="card/d13.jpg" alt="Reine de Deniers — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Reine de Deniers<span class="card-sub">Ratu Koin</span></h3>
+              <p>Kemakmuran dan kepraktisan yang penuh kehangatan. Terampil merawat diri, keluarga, dan pekerjaan.</p>
+              <span class="suit-tag">Deniers</span>
+            </article>
+
+            <article class="card-item suit-d">
+              <figure class="card-figure">
+                <img src="card/d14.jpg" alt="Roi de Deniers — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Roi de Deniers<span class="card-sub">Raja Koin</span></h3>
+              <p>Penguasaan atas urusan materi dan stabilitas yang mapan. Bijaksana dalam mengelola sumber daya.</p>
+              <span class="suit-tag">Deniers</span>
+            </article>
+            <!-- SUIT ÉPÉES (e01–e14) -->
+            <article class="card-item suit-e" id="epees">
+              <figure class="card-figure">
+                <img src="card/e01.jpg" alt="As d'Épées — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>As d'&Eacute;p&eacute;es<span class="card-sub">As Pedang</span></h3>
+              <p>Kejelasan pikiran dan kebenaran yang menembus keraguan. Saatnya mengambil keputusan dengan tegas.</p>
+              <span class="suit-tag">&Eacute;p&eacute;es</span>
+            </article>
+
+            <article class="card-item suit-e">
+              <figure class="card-figure">
+                <img src="card/e02.jpg" alt="Deux d'Épées — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Deux d'&Eacute;p&eacute;es<span class="card-sub">Dua Pedang</span></h3>
+              <p>Kebimbangan antara dua sisi. Menimbang dengan tenang lebih baik daripada memutuskan dengan tergesa.</p>
+              <span class="suit-tag">&Eacute;p&eacute;es</span>
+            </article>
+
+            <article class="card-item suit-e">
+              <figure class="card-figure">
+                <img src="card/e03.jpg" alt="Trois d'Épées — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Trois d'&Eacute;p&eacute;es<span class="card-sub">Tiga Pedang</span></h3>
+              <p>Luka hati atau kata-kata yang menyakitkan. Rasa sakit ini perlu diakui sebelum bisa disembuhkan.</p>
+              <span class="suit-tag">&Eacute;p&eacute;es</span>
+            </article>
+
+            <article class="card-item suit-e">
+              <figure class="card-figure">
+                <img src="card/e04.jpg" alt="Quatre d'Épées — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Quatre d'&Eacute;p&eacute;es<span class="card-sub">Empat Pedang</span></h3>
+              <p>Waktunya beristirahat dan memulihkan diri. Jeda yang tenang membuat pikiran kembali jernih.</p>
+              <span class="suit-tag">&Eacute;p&eacute;es</span>
+            </article>
+
+            <article class="card-item suit-e">
+              <figure class="card-figure">
+                <img src="card/e05.jpg" alt="Cinq d'Épées — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Cinq d'&Eacute;p&eacute;es<span class="card-sub">Lima Pedang</span></h3>
+              <p>Konflik dan kemenangan yang terasa pahit. Menang dengan cara yang tepat lebih penting daripada menang saja.</p>
+              <span class="suit-tag">&Eacute;p&eacute;es</span>
+            </article>
+
+            <article class="card-item suit-e">
+              <figure class="card-figure">
+                <img src="card/e06.jpg" alt="Six d'Épées — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Six d'&Eacute;p&eacute;es<span class="card-sub">Enam Pedang</span></h3>
+              <p>Perjalanan menjauh dari masalah menuju air yang lebih tenang. Transisi kecil yang membawa kelegaan.</p>
+              <span class="suit-tag">&Eacute;p&eacute;es</span>
+            </article>
+
+            <article class="card-item suit-e">
+              <figure class="card-figure">
+                <img src="card/e07.jpg" alt="Sept d'Épées — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Sept d'&Eacute;p&eacute;es<span class="card-sub">Tujuh Pedang</span></h3>
+              <p>Strategi dan kecerdikan dalam menghadapi situasi rumit. Berhati-hatilah terhadap niat yang ambigu.</p>
+              <span class="suit-tag">&Eacute;p&eacute;es</span>
+            </article>
+
+            <article class="card-item suit-e">
+              <figure class="card-figure">
+                <img src="card/e08.jpg" alt="Huit d'Épées — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Huit d'&Eacute;p&eacute;es<span class="card-sub">Delapan Pedang</span></h3>
+              <p>Perasaan terbelenggu oleh pikiran sendiri. Belenggu itu nyata, tetapi kuncinya tetap ada di tangan kita.</p>
+              <span class="suit-tag">&Eacute;p&eacute;es</span>
+            </article>
+
+            <article class="card-item suit-e">
+              <figure class="card-figure">
+                <img src="card/e09.jpg" alt="Neuf d'Épées — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Neuf d'&Eacute;p&eacute;es<span class="card-sub">Sembilan Pedang</span></h3>
+              <p>Kecemasan yang mengganggu tidur dan membayangi pagi. Bicarakan dengan berani; beban akan terasa lebih ringan.</p>
+              <span class="suit-tag">&Eacute;p&eacute;es</span>
+            </article>
+
+            <article class="card-item suit-e">
+              <figure class="card-figure">
+                <img src="card/e10.jpg" alt="Dix d'Épées — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Dix d'&Eacute;p&eacute;es<span class="card-sub">Sepuluh Pedang</span></h3>
+              <p>Akhir dari masa sulit. Titik terendah sering kali menjadi titik balik menuju keadaan yang lebih baik.</p>
+              <span class="suit-tag">&Eacute;p&eacute;es</span>
+            </article>
+
+            <article class="card-item suit-e">
+              <figure class="card-figure">
+                <img src="card/e11.jpg" alt="Valet d'Épées — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Valet d'&Eacute;p&eacute;es<span class="card-sub">Pelayan Pedang</span></h3>
+              <p>Rasa ingin tahu dan informasi baru yang perlu disikapi dengan kewaspadaan. Tanyakan sebelum memercayai.</p>
+              <span class="suit-tag">&Eacute;p&eacute;es</span>
+            </article>
+
+            <article class="card-item suit-e">
+              <figure class="card-figure">
+                <img src="card/e12.jpg" alt="Cavalier d'Épées — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Cavalier d'&Eacute;p&eacute;es<span class="card-sub">Ksatria Pedang</span></h3>
+              <p>Keberanian untuk menghadapi tantangan secara langsung. Kecepatan bertindak diimbangi pikiran yang tajam.</p>
+              <span class="suit-tag">&Eacute;p&eacute;es</span>
+            </article>
+
+            <article class="card-item suit-e">
+              <figure class="card-figure">
+                <img src="card/e13.jpg" alt="Reine d'Épées — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Reine d'&Eacute;p&eacute;es<span class="card-sub">Ratu Pedang</span></h3>
+              <p>Logika yang tajam dan kejujuran yang tidak diragukan. Mandiri dalam berpikir, adil dalam menilai.</p>
+              <span class="suit-tag">&Eacute;p&eacute;es</span>
+            </article>
+
+            <article class="card-item suit-e">
+              <figure class="card-figure">
+                <img src="card/e14.jpg" alt="Roi d'Épées — kartu Tarot de Marseille" loading="lazy">
+              </figure>
+              <h3>Roi d'&Eacute;p&eacute;es<span class="card-sub">Raja Pedang</span></h3>
+              <p>Otoritas akal budi dan nasihat yang strategis. Bijaksana mengambil keputusan, tegas menjalankannya.</p>
+              <span class="suit-tag">&Eacute;p&eacute;es</span>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col footer-about">
+        <p class="footer-brand">Tarot de Marseille</p>
+        <p>
+          Website statis bertema Tarot de Marseille, dibangun murni dengan HTML5 dan CSS
+          tanpa framework apa pun.
+        </p>
+      </div>
+
+      <nav class="footer-col" aria-label="Navigasi footer">
+        <h2 class="footer-head">Halaman</h2>
+        <ul class="footer-links">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="sejarah.html">Sejarah</a></li>
+          <li><a href="kartu.html">Arti Kartu</a></li>
+          <li><a href="ramalan.html">Ramalan</a></li>
+          <li><a href="tentang.html">Tentang</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-col">
+        <h2 class="footer-head">Pembuat</h2>
+        <p>
+          Danu Warisman<br>
+          NIM 103122400041<br>
+          Kelas S1SE-08-02
+        </p>
+      </div>
+
+      <p class="footer-meta">
+        Tugas Kampus &middot; HTML5 &amp; Vanilla CSS &middot; Tanpa framework
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
